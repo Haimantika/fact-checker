@@ -1,0 +1,24 @@
+spec:
+  name: fact-checker
+  services:
+    - name: web
+      git:
+        branch: main
+        repo_clone_url: https://github.com/Haimantika/fact-checker.git
+      environment_slug: nodejs
+      instance_count: 1
+      instance_size_slug: basic-xxs
+      http_port: 3000
+      run_command: npm start
+      envs:
+        - key: EXA_API_KEY
+          type: SECRET
+          scope: RUN_AND_BUILD_TIME
+        - key: DO_INFERENCE_API_KEY
+          type: SECRET
+          scope: RUN_AND_BUILD_TIME
+        - key: DO_INFERENCE_URL
+          value: "https://inference.do-ai.run/v1"
+          scope: RUN_TIME
+        - key: DO_INFERENCE_MODEL
+          scope: RUN_TIME

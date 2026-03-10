@@ -1,9 +1,15 @@
 # fact-checker
 
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/Haimantika/fact-checker/tree/main)
+
 A fact-checking web app that lets users paste text or links and get a verdict on whether the content is **true**, **false**, **AI-generated hoax**, or **unknown**, using:
 
 - Exa for web search
 - DigitalOcean serverless inference for model reasoning
+
+## Deploy to DigitalOcean
+
+Click the **Deploy to DO** button above to create the app on App Platform. You’ll be prompted to set `EXA_API_KEY`, `DO_INFERENCE_API_KEY`, and `DO_INFERENCE_MODEL`; `DO_INFERENCE_URL` defaults to `https://inference.do-ai.run/v1`.
 
 ## Setup (If you want to run it locally)
 
