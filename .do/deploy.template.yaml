@@ -5,7 +5,7 @@ spec:
       git:
         branch: main
         repo_clone_url: https://github.com/Haimantika/fact-checker.git
-      environment_slug: nodejs
+      environment_slug: node-js
       instance_count: 1
       instance_size_slug: basic-xxs
       http_port: 3000
